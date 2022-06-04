@@ -1,0 +1,53 @@
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{%static 'css/common2.css'%}" type="text/css">
+  <link rel="stylesheet" href="{%static 'css/register.css'%}" type="text/css">
+</head>
+
+<body>
+
+  <section id="headers">
+
+    <a href="#"><img src ="{% static 'images/4.png' %}" class="logo"alt=""></a>
+    <div>
+        <ul id="navbar">
+            <li><a  href="home">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a class="active" href="view">To View</a></li>
+            <li><a href="edit1">To Edit</a></li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section>
+<h2>Enter your phone number to view your Detail!</h2>
+
+<div class="container">
+  <form action="view2" method="post">
+    {% csrf_token %} 
+    <div class="row">
+      <div class="col-25">
+        <label for="Phone">Phone</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phone" name="phone" placeholder="Your phone">
+      </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    {% csrf_token %} 
+  </div>
+  
+</section>
+  </body>
+  </html>
+  {% endblock %}

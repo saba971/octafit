@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Registration is successfull!</p>
+<a href="http://localhost:8000/">For Homepage</a>
+
+</body>
+</html>
+
+
+<!---
+#sqllite html content 
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+    </style>
+<center><h1>welcome to octafit</h1></center>
+<center><p>we Believe</p></center>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+          <th>ID</th>
+          <th>name</th> 
+          <th>age</th>
+          <th>place</th>
+          <th>phone</th>
+        </tr>
+        {% for data in datas %}
+        <tbody>
+        <tr>
+          <td>{{data.id}}</td>
+          <td>{{data.name}}</td>
+          <td>{{data.age}}</td>
+          <td>{{data.place}}</td>
+          <td>{{data.phone}}</td>
+        </tr>
+    </tbody>
+        {% endfor %}
+</body>
+</html>
+-->

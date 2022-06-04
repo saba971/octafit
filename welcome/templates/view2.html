@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+    </style>
+<center><h1>Your Detail</h1></center>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+          <th>name</th> 
+          <th>age</th>
+          <th>place</th>
+          <th>phone</th>
+          <th>Edit</th>
+        </tr>
+        <tbody>
+        <tr>
+          <td>{{details.name}}</td>
+          <td>{{details.age}}</td>
+          <td>{{details.place}}</td>
+          <td>{{details.phone}}</td>
+          <td><a href="http://localhost:8000/edit1">edit</a></td>
+        </tr>
+    </tbody>
+</body>
+</html>

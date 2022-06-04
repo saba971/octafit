@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Octafit</title>
+<link rel="stylesheet" href="{% static 'css/common2.css' %}">
+<script src="{% static 'js/common.js' %}"></script>
+</head>
+
+<body>
+     <!-- Navigation bar section-->
+    <section id="headers">
+      <a href="#"><img src ="{% static 'images/4.png' %}" class="logo"alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="home">Home</a></li>
+                <li><a href="register">Register</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Contact</a></li>
+                <li><a href="signout">signout</a></li>    
+            </ul>
+            
+        </div>
+        <p style="color:green;"></style>{{user.name}}</p>
+
+    </section>
+
+     <!--front page section-->
+     <section id="hero">
+      <h4>Welcome to octafit</h4>
+      <h2>We Believe</h2>
+      <p>sport has the power to change the world</p>
+      <button>Explore octafit</button>
+  </section>
+
+  <!-- Featured Workout -->
+  <section id="product1" class="section-p1">
+      <h2>Featured Workouts</h2>
+      <p>consistency is the key</p>
+      <div class="pro-container">
+          <div class="pro">
+              <img src="{% static 'images/home.png' %}" alt="">
+              <div class="des">
+                  <span>Let's do this</span>
+              </div>
+              </div>
+              <div class="pro">
+                  <img src="{% static 'images/home.png' %}" alt="">
+                  <div class="des">
+                      <span>Let's do this</span>
+                  </div>
+              </div>
+              <div class="pro">
+                  <img src="{% static 'images/home.png' %}" alt="">
+                  <div class="des">
+                      <span>Let's do this</span>
+                  </div>
+              </div>
+              <div class="pro">
+                  <img src="{% static 'images/home.png' %}" alt="">
+                  <div class="des">
+                      <span>Let's do this</span>
+                  </div>
+              </div>
+              <div class="pro">
+                  <img src="{% static 'images/home.png' %}" alt="">
+                  <div class="des">
+                      <span>Let's do this</span>
+                  </div>
+              </div>
+              <div class="pro">
+                  <img src="{% static 'images/home.png' %}" alt="">
+                  <div class="des">
+                      <span>Let's do this</span>
+                  </div>
+              </div>  
+      </div>
+  </section>
+
+    <!-- News letter -->
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+          <h4>Sigup for newsletter</h4>
+          <p>Get email for latest updates</p>
+      </div>
+      <div class="form" action="signup" method="get">
+          <input type="text" placeholder="your email address">
+          <button id="mybutton" class="normal">Signup</button>
+      </div>
+      
+      </section>
+
+  
+
+
+</body>
+</html>

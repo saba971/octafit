@@ -1,0 +1,77 @@
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{%static 'css/common2.css'%}" type="text/css">
+  <link rel="stylesheet" href="{%static 'css/register.css'%}" type="text/css">
+</head>
+
+<body>
+
+  <section id="headers">
+
+    <a href="#"><img src ="{% static 'images/4.png' %}" class="logo"alt=""></a>
+    <div>
+        <ul id="navbar">
+            <li><a  href="home">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="view">To View</a></li>
+            <li><a  class="active" href="edit1">To Edit</a></li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section>
+<h2>Edit your detail</h2>
+
+<div class="container">
+  <form action="edit1" method="post">
+    {% csrf_token %} 
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Your name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Age</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="age" name="age" placeholder="your age">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Place</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="place" name="place" placeholder="Your place">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phone" name="phone" placeholder="phone number">
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  {% csrf_token %} 
+</div>
+
+</section>
+</body>
+</html>
+{% endblock %}
