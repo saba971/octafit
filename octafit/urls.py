@@ -39,7 +39,7 @@ urlpatterns = [
     path('signup',views.signup,name="signup"),
     path('edit1',views.edit1,name="edit1"),
     path('signout',views.signout,name="signout"),
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+    path(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
  
