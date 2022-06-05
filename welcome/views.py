@@ -1,6 +1,6 @@
 import email
 from fnmatch import fnmatchcase
-from tkinter import Place
+#from tkinter import Place
 from django.shortcuts import render
 from django.http import HttpResponse
 from pathlib import Path
