@@ -97,7 +97,7 @@ body{
 
 /* Homepage-start */
 #hero{
-  background-image: url("../images/home.png");
+  background-image: url("../images/home2.png");
   height:90vh;
   width: 100%; 
   background-size: cover;
@@ -158,18 +158,18 @@ text-align: center;
 
 #product1 .pro img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 /* Homepage-end */
 
-/* newsleter-start */
+/* newsleter-start(currently not used */
 #newsletter{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url("../images/banner.png");
+  background-image: url("../images/b2.png");
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background: #041e42;
@@ -208,3 +208,38 @@ text-align: center;
   border-bottom-left-radius:0 ;
 }
 /* newsleter-end */
+
+/* banner-start */
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../images/b2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4{
+    color:white;
+    font-size:16px;
+}
+#banner h2{
+  color:white;
+  font-size:30px;
+  padding: 10px 0;
+}
+#banner h2 span{
+  color: red;
+}
+#banner button:hover{
+  background-color: #088178;
+  color: white;
+}
+
+/* banner-end */
+
+
