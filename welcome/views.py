@@ -103,6 +103,9 @@ def clientcount(request):
 def view(request):
     return render(request,'view.html')
 
+def privacypolicy(request):
+    return render(request,'privacypolicy.html')
+
 def view2(request):
     if request.method == 'POST':
         dict1={}

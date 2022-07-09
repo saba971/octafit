@@ -42,5 +42,6 @@ urlpatterns = [
     path('signout',views.signout,name="signout"),
     path(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
     path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+    path('privacypolicy',views.privacypolicy,name="privacypolicy"),
 ]
  
